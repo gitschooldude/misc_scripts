@@ -1,0 +1,2 @@
+[alias]
+    checkout-refs-version = "!f() { if [ -z $1 ]; then echo "No revision given! You must specify a valid ref."; exit 0; fi; dir=`git rev-parse --show-toplevel`; cd $dir; dest=`echo $1 |sed 's-/-_-g'`; git show $1:hello.cpp  > hello.cpp.$1 ; }; f"
