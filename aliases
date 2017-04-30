@@ -1,0 +1,2 @@
+# Paste these in your Mac's ~/.bash_profile
+alias gt='git log --graph --abbrev-commit --decorate --oneline --all'
